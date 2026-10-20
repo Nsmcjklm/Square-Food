@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Food Béziers | Burgers, tacos, pizzas, sandwichs · 7 av. des Martyrs de la Résistance</title>
+  <meta name="description" content="Square Food, restauration rapide à Béziers : burgers, tacos, pizzas, sandwichs, paninis, bowls, crêpes et bubble waffles. Menu étudiant à 5 €. 7 av. des Martyrs de la Résistance. 09 55 81 53 34.">
+  <meta name="theme-color" content="#1c9be3">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Square Food Béziers">
+  <meta property="og:description" content="Une explosion de saveurs dans chaque bouchée ! Burgers, tacos, pizzas, sandwichs. Menu étudiant à 5 €.">
+  <meta property="og:image" content="images/kiosque.webp">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23ffb51f'/%3E%3Cpath d='M10 30a22 16 0 0 1 44 0z' fill='%231c9be3'/%3E%3Crect x='10' y='34' width='44' height='6' rx='3' fill='%23fff'/%3E%3Cpath d='M12 44h40a20 10 0 0 1-40 0z' fill='%231c9be3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Square Food",
+    "servesCuisine": ["Burgers", "Tacos", "Pizzas", "Sandwichs", "Restauration rapide"],
+    "telephone": "+33955815334",
+    "priceRange": "€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 avenue des Martyrs de la Résistance",
+      "postalCode": "34500",
+      "addressLocality": "Béziers",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "23:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#top" class="logo" aria-label="Square Food, accueil">
+        <span class="logo__square">Square</span><span class="logo__food">Food</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#etudiants">Offres étudiants</a></li>
+        <li><a href="#kiosque">Le kiosque</a></li>
+        <li><a href="#infos">Infos</a></li>
+      </ul>
+
+      <a href="tel:+33955815334" class="btn btn--blue nav__call">09 55 81 53 34</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="top">
+      <span class="splash splash--yellow hero__splash-1" aria-hidden="true"></span>
+      <span class="splash splash--blue hero__splash-2" aria-hidden="true"></span>
+
+      <div class="hero__text">
+        <p class="hero__where" data-reveal>7 av. des Martyrs de la Résistance · Béziers</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Une explosion</span></span>
+          <span class="line"><span>de saveurs dans</span></span>
+          <span class="line"><span class="hl">chaque bouchée&nbsp;!</span></span>
+        </h1>
+        <p class="hero__sub" data-reveal style="--d:.4s">
+          Burgers, tacos, pizzas, sandwichs, bowls et desserts. Sur place ou à emporter.
+        </p>
+        <div class="hero__cta" data-reveal style="--d:.55s">
+          <a href="#carte" class="btn btn--yellow btn--big">Voir la carte</a>
+          <a href="tel:+33955815334" class="btn btn--white btn--big">Appeler</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal style="--d:.15s">
+        <div class="hero__disc">
+          <img src="images/burger-menu.webp" width="475" height="352" alt="Un double burger au cheddar et bacon avec une canette et des frites Square Food" fetchpriority="high">
+        </div>
+        <a href="#etudiants" class="price-tag hero__tag">
+          <small>Menu étudiant</small>
+          <strong>5€</strong>
+          <small>burger + frites + boisson</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Bandeau ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Burgers</span><span>Tacos</span><span>Pizzas</span><span>Sandwichs</span><span>Paninis</span><span>Bowls</span><span>Crêpes</span><span>Bubble waffles</span>
+        <span>Burgers</span><span>Tacos</span><span>Pizzas</span><span>Sandwichs</span><span>Paninis</span><span>Bowls</span><span>Crêpes</span><span>Bubble waffles</span>
+      </div>
+    </div>
+
+    <!-- ===== Offres étudiants ===== -->
+    <section class="section students" id="etudiants" aria-labelledby="etu-title">
+      <div class="students__head">
+        <h2 id="etu-title" data-reveal>Nos offres du midi</h2>
+        <p data-reveal style="--d:.1s">Seulement pour nos étudiants.</p>
+      </div>
+      <div class="offers">
+        <article class="offer offer--blue" data-reveal>
+          <span class="offer__price">5€</span>
+          <h3>Le menu burger</h3>
+          <p>Burger + frites + boisson</p>
+        </article>
+        <article class="offer offer--yellow" data-reveal style="--d:.1s">
+          <span class="offer__price">7€</span>
+          <h3>La pizza</h3>
+          <p>Toutes les pizzas</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== La carte ===== -->
+    <section class="section" id="carte" aria-labelledby="carte-title">
+      <div class="section__head">
+        <h2 id="carte-title" data-reveal>La carte</h2>
+        <p data-reveal style="--d:.1s">Tout est fait à la commande. Sauces au choix.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Catégories de la carte" data-reveal>
+        <button role="tab" class="tab" aria-selected="true" data-cat="burgers">Burgers</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="sandwichs">Sandwichs</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="tacos">Tacos</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="pizzas">Pizzas</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="paninis">Paninis</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="bowls">Bowls</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="petite-faim">Petite faim</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="sucre">Coin sucré</button>
+      </div>
+
+      <div class="board">
+        <!-- Burgers -->
+        <div class="panel" data-panel="burgers" role="tabpanel">
+          <h3 class="panel__title">Nos burgers</h3>
+          <ul class="dishes">
+            <li><div><b>Double Monster</b><span>2 steaks, cheddar, crudités, sauces au choix</span></div><em>6,50 €</em></li>
+            <li><div><b>Triple Monster</b><span>3 steaks, cheddar, crudités, sauces au choix</span></div><em>7,50 €</em></li>
+            <li><div><b>Chèvre Miel</b><span>1 steak, cheddar, chèvre, miel, crudités, sauces au choix</span></div><em>7,50 €</em></li>
+            <li><div><b>Le Robuste</b><span>1 steak, cheddar, tenders, crudités, sauces au choix</span></div><em>7,50 €</em></li>
+            <li><div><b>Le Crispy</b><span>Tenders, cheddar, crudités, sauces au choix</span></div><em>6,50 €</em></li>
+            <li><div><b>Le Fish</b><span>Fish, cheddar, crudités, sauces au choix</span></div><em>5,00 €</em></li>
+            <li><div><b>Le Chicken</b><span>Poulet pané, galette de pomme de terre, cheddar, crudités, sauces au choix</span></div><em>6,50 €</em></li>
+            <li><div><b>Montagnard</b><span>1 steak, bacon, raclette, sauces au choix</span></div><em>8,00 €</em></li>
+            <li class="star"><div><b>Le Square Burger</b><span>2 steaks, œuf, cheddar, crudités, sauces au choix</span></div><em>8,50 €</em></li>
+            <li><div><b>Cheese</b><span>&nbsp;</span></div><em>3,50 €</em></li>
+          </ul>
+          <p class="panel__note"><strong>Menu étudiant 5 €</strong> : burger + frites + boisson.</p>
+        </div>
+
+        <!-- Sandwichs -->
+        <div class="panel" data-panel="sandwichs" role="tabpanel">
+          <h3 class="panel__title">Nos sandwichs</h3>
+          <ul class="dishes">
+            <li><div><b>Kebab</b><span>Kebab, crudités, sauces au choix</span></div><em>6,50 €</em></li>
+            <li><div><b>Boursin</b><span>Poulet mariné, crème Boursin, crudités, cheddar, sauce au choix</span></div><em>7,00 €</em></li>
+            <li><div><b>Le Monstro</b><span>Steaks, cheddar, crudités, sauce au choix</span></div><em>7,00 €</em></li>
+            <li><div><b>Bleu</b><span>Cordon bleu, cheddar, œuf, crudités, sauces au choix</span></div><em>7,50 €</em></li>
+            <li><div><b>Le Fumé</b><span>Poulet mariné, bacon, raclette, crudités, sauces au choix</span></div><em>8,00 €</em></li>
+            <li><div><b>Spécial</b><span>Escalope de poulet, viande hachée, œuf, crudités, sauces au choix</span></div><em>8,00 €</em></li>
+            <li><div><b>Chicken Crispy</b><span>Tenders, oignons frits, crudités, sauces au choix</span></div><em>7,00 €</em></li>
+          </ul>
+          <p class="panel__note"><strong>En menu +1,50 €.</strong> Disponible en pain ou en galette.</p>
+        </div>
+
+        <!-- Tacos -->
+        <div class="panel" data-panel="tacos" role="tabpanel">
+          <h3 class="panel__title">Nos tacos</h3>
+          <div class="sizes">
+            <div><b>M</b><em>6,50 €</em></div>
+            <div><b>L</b><em>7,50 €</em></div>
+            <div><b>XL</b><em>8,50 €</em></div>
+          </div>
+          <p class="panel__label">Viandes au choix</p>
+          <ul class="chips">
+            <li>Viande hachée</li><li>Nuggets</li><li>Merguez</li><li>Tenders</li><li>Poulet</li><li>Poulet mariné</li>
+          </ul>
+        </div>
+
+        <!-- Pizzas -->
+        <div class="panel" data-panel="pizzas" role="tabpanel">
+          <h3 class="panel__title">Nos pizzas</h3>
+          <div class="cols">
+            <div>
+              <p class="panel__label">Base tomate</p>
+              <ul class="dishes">
+                <li><div><b>Margarita</b><span>Mozzarella, olive</span></div><em>7,50 €</em></li>
+                <li><div><b>Oriental</b><span>Merguez, mozzarella, poivron</span></div><em>7,50 €</em></li>
+                <li><div><b>Mexicaine</b><span>Viande hachée, merguez, poivron, oignons, mozzarella</span></div><em>7,00 €</em></li>
+                <li><div><b>4 fromages</b><span>Emmental, mozzarella, chèvre, roquefort</span></div><em>7,00 €</em></li>
+                <li><div><b>Carnivore</b><span>Viande hachée, chorizo, mozzarella, sauce barbecue</span></div><em>7,50 €</em></li>
+                <li><div><b>Océane</b><span>Thon, poivron, mozzarella</span></div><em>8,50 €</em></li>
+                <li><div><b>Napolitaine</b><span>Jambon, champignons, mozzarella</span></div><em>8,50 €</em></li>
+                <li><div><b>Pêcheur</b><span>Fruits de mer, mozzarella</span></div><em>8,50 €</em></li>
+              </ul>
+            </div>
+            <div>
+              <p class="panel__label">Base crème</p>
+              <ul class="dishes">
+                <li><div><b>La Curry</b><span>Poulet curry, poivron, mozzarella</span></div><em>9,00 €</em></li>
+                <li><div><b>Savoyarde</b><span>Jambon, raclette, mozzarella</span></div><em>7,50 €</em></li>
+                <li><div><b>Nordique</b><span>Saumon, oignon, mozzarella</span></div><em>9,50 €</em></li>
+                <li><div><b>Tartiflette</b><span>1 steak, cheddar, escalope de poulet, œuf, crudités, sauces au choix</span></div><em>8,00 €</em></li>
+                <li><div><b>Le Fumé</b><span>Poulet mariné, bacon, raclette, crudités, sauces au choix</span></div><em>9,50 €</em></li>
+              </ul>
+              <p class="panel__note"><strong>Étudiants : toutes les pizzas à 7 €</strong> le midi.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paninis -->
+        <div class="panel" data-panel="paninis" role="tabpanel">
+          <h3 class="panel__title">Nos paninis <small>4,00 € pièce</small></h3>
+          <ul class="dishes">
+            <li><div><b>Fermier</b><span>Poulet, mozzarella, sauce blanche</span></div><em>4,00 €</em></li>
+            <li><div><b>3 fromages</b><span>Chèvre, mozzarella, emmental</span></div><em>4,00 €</em></li>
+            <li><div><b>Charcutier</b><span>Jambon de dinde, mozzarella</span></div><em>4,00 €</em></li>
+            <li><div><b>Chèvre Miel</b><span>Chèvre, miel, mozzarella</span></div><em>4,00 €</em></li>
+            <li><div><b>Kefta</b><span>Viande hachée, tomate, cheddar</span></div><em>4,00 €</em></li>
+            <li><div><b>Kebab</b><span>Kebab, cheddar, sauce pitta</span></div><em>4,00 €</em></li>
+          </ul>
+        </div>
+
+        <!-- Bowls -->
+        <div class="panel" data-panel="bowls" role="tabpanel">
+          <h3 class="panel__title">Nos bowls <small>7,00 €</small></h3>
+          <p class="panel__label">Garniture au choix</p>
+          <ul class="chips">
+            <li>Steak</li><li>Nuggets</li><li>Tenders</li><li>Kebab</li><li>Cordon bleu</li><li>Poulet mariné</li><li>Poulet</li>
+          </ul>
+        </div>
+
+        <!-- Petite faim -->
+        <div class="panel" data-panel="petite-faim" role="tabpanel">
+          <h3 class="panel__title">Le coin de la petite faim</h3>
+          <ul class="dishes">
+            <li><div><b>Onion rings</b><span>× 6</span></div><em>3,50 €</em></li>
+            <li><div><b>Calamars</b><span>× 6</span></div><em>3,50 €</em></li>
+            <li><div><b>Frites cheddar</b><span>&nbsp;</span></div><em>3,50 €</em></li>
+            <li><div><b>Bouchées camembert</b><span>× 4</span></div><em>3,50 €</em></li>
+            <li><div><b>Mozza sticks</b><span>× 4</span></div><em>4,00 €</em></li>
+            <li><div><b>Tenders</b><span>× 4</span></div><em>4,50 €</em></li>
+          </ul>
+        </div>
+
+        <!-- Coin sucré -->
+        <div class="panel" data-panel="sucre" role="tabpanel">
+          <h3 class="panel__title">Le coin sucré</h3>
+          <ol class="steps">
+            <li>
+              <span class="steps__n">1</span>
+              <div><b>Choisis ta base</b>
+                <p>Crêpe <em>2 €</em> · Bubble waffle <em>3 €</em></p></div>
+            </li>
+            <li>
+              <span class="steps__n">2</span>
+              <div><b>Choisis ton parfum</b> <em>+1 €</em>
+                <p>Spéculoos, confiture, miel, Nutella, sucre</p></div>
+            </li>
+            <li>
+              <span class="steps__n">3</span>
+              <div><b>Choisis ton topping</b> <em>+0,50 €</em>
+                <p>M&amp;M's, Oreo, Lotus, KitKat, Kinder Bueno, Bueno White, Choco-Bons, Kinder Country</p></div>
+            </li>
+            <li>
+              <span class="steps__n">4</span>
+              <div><b>Ajoute des fruits</b> <em>+1 €</em>
+                <p>Poire, fraise, banane, pomme. Chantilly <em>+0,50 €</em></p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Le kiosque ===== -->
+    <section class="section kiosk" id="kiosque" aria-labelledby="kiosk-title">
+      <figure class="kiosk__photo" data-reveal>
+        <img src="images/kiosque.webp" width="756" height="557" alt="Le kiosque en bois de Square Food avec des clients devant, avenue des Martyrs de la Résistance" loading="lazy">
+      </figure>
+      <div class="kiosk__text">
+        <h2 id="kiosk-title" data-reveal>Le kiosque</h2>
+        <p data-reveal style="--d:.1s">Notre petit chalet en bois, au 7 avenue des Martyrs de la Résistance. Vous commandez au comptoir, on prépare tout devant vous.</p>
+        <ul class="facts" data-reveal style="--d:.2s">
+          <li>Sur place</li>
+          <li>À emporter</li>
+          <li>Livraison sur Béziers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Infos ===== -->
+    <section class="section" id="infos" aria-labelledby="infos-title">
+      <div class="section__head">
+        <h2 id="infos-title" data-reveal>Infos pratiques</h2>
+      </div>
+
+      <div class="infos">
+        <div class="card" data-reveal>
+          <h3>Adresse</h3>
+          <address>7 avenue des Martyrs de la Résistance<br>34500 Béziers</address>
+          <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=7+avenue+des+Martyrs+de+la+R%C3%A9sistance+34500+B%C3%A9ziers" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+
+        <div class="card card--yellow" data-reveal style="--d:.08s">
+          <h3>Horaires</h3>
+          <p class="big">Tous les jours</p>
+          <p class="big big--blue">12h – 23h</p>
+          <p class="open" id="openStatus"></p>
+        </div>
+
+        <div class="card card--blue" data-reveal style="--d:.16s">
+          <h3>Téléphone</h3>
+          <a class="phone" href="tel:+33955815334">09 55 81 53 34</a>
+          <p>Pour commander à emporter ou poser une question.</p>
+        </div>
+      </div>
+
+      <div class="map" id="map" data-reveal>
+        <div class="map__placeholder">
+          <p><strong>7 av. des Martyrs de la Résistance, Béziers</strong></p>
+          <button type="button" class="btn btn--blue" id="loadMap">Afficher le plan</button>
+          <small>Le plan est fourni par Google Maps, qui peut déposer des cookies.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p class="footer__logo" aria-hidden="true"><span>Square</span> <span>Food</span></p>
+    <p class="footer__slogan">Une explosion de saveurs dans chaque bouchée&nbsp;!</p>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> Square Food · 7 av. des Martyrs de la Résistance, 34500 Béziers</span>
+      <a href="tel:+33955815334">09 55 81 53 34</a>
+    </div>
+  </footer>
+
+  <!-- Barre d'action fixe sur mobile -->
+  <div class="mobile-bar">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=7+avenue+des+Martyrs+de+la+R%C3%A9sistance+34500+B%C3%A9ziers" target="_blank" rel="noopener" class="btn btn--white">Itinéraire</a>
+    <a href="tel:+33955815334" class="btn btn--yellow">Appeler</a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
